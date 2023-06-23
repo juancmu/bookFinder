@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import {MapContainer, Marker, Popup, TileLayer, useMap} from 'react-leaflet'
-import './leaflet.css';
+
 import './styles.css'
 import '../bootstrap.min.css'
 // import useCounter from './useCounter';
