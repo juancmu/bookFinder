@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import "./Navbar.css";
-import logoImg from "../images/logo.png";
 import {HiOutlineMenuAlt3} from "react-icons/hi";
+import pdf from '../Act1-Unir-JCMC.pdf';
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -30,6 +30,9 @@ const Navbar = () => {
             </li>
             <li className='nav-item'>
               <Link to = "info" className='nav-link text-uppercase text-white fs-22 fw-6 ls-1'>Info</Link>
+            </li>
+            <li className='nav-item'>
+            <a href={pdf} target="_blank" rel="noopener noreferrer">REPORTE</a>
             </li>
           </ul>
         </div>

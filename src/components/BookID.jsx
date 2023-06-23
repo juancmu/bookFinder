@@ -21,12 +21,12 @@ const BookID = () => {
       try{
         const response = await fetch(`https://openlibrary.org/works/${id}.json`);
         const data = await response.json();
-        console.log(data);
+    
 
         if(data){
           const {description, title, covers} = data;
           const newBook = {
-            description: description ? description.value : "No description found",
+            description: description ? description.value : "No se encontro descripcion",
             title: title,
             cover_img: covers ? `https://covers.openlibrary.org/b/id/${covers[0]}-L.jpg` : coverImg,
       
@@ -68,16 +68,10 @@ const BookID = () => {
             <div className='book-details-item description'>
               <span>{book?.description}</span>
             </div>
+  
+          
             <div className='book-details-item'>
-              <span className='fw-6'>Subject Places: </span>
-              <span className='text-italic'>{book?.subject_places}</span>
-            </div>
-            <div className='book-details-item'>
-              <span className='fw-6'>Subject Times: </span>
-              <span className='text-italic'>{book?.subject_times}</span>
-            </div>
-            <div className='book-details-item'>
-              <span className='fw-6'>Subjects: </span>
+              <span className='fw-6'>Libreria donde la Puedes Encontrar: </span>
               <span>{book?.subjects}</span>
             </div>
             <Maps />
