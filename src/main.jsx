@@ -11,7 +11,7 @@ import About from "./views/About";
 import BookList from "./components/BookList";
 import BookID from "./components/BookID";
 import { ApiLibrary } from './ApiLibrary';
-import { V404 } from './components/v404';
+import NoFound from './components/Nofound';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -24,7 +24,7 @@ root.render(
           <Route path = "Info" element = {<About />} />
           <Route path = "book" element = {<BookList />} />
           <Route path = "/book/:id" element = {<BookID />} />
-          <Route path = "*" element = {<V404 />} />
+          <Route path = "*" element = {<NoFound />} />
         </Route>
       </Routes>
     </BrowserRouter>

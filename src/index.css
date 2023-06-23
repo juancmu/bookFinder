@@ -9,6 +9,8 @@
   --transition: all 300ms ease-in-out;
 }
 
+
+
 *{
   padding: 0;
   margin: 0;
@@ -48,6 +50,12 @@ input{
   outline: 0;
   font-family: inherit;
   font-size: 1.6rem;
+}
+
+.home {
+
+  background-image: url('../src/images/logo.png')
+
 }
 .resize-animation-stopper *{
   animation: none!important;
