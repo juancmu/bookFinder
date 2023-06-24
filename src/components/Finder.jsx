@@ -36,6 +36,7 @@ const SearchForm = () => {
         <div className='search-form-content'>
           <form className='search-form'>
             <div className='search-form-elem flex flex-sb '>
+              <h3>Ingrese parametro de busqueda. Ejm: Programacion</h3>  
               <input type = "text" className='form-control' 
               onChange={e => setTxtParam(e.target.value)}
               value={txtParam}

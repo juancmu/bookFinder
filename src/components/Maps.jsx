@@ -23,7 +23,7 @@ const geoStoreBooks = [
 
                 
 ]
-console.log(geoStoreBooks);
+// console.log(geoStoreBooks);
 
 
 // const {geoLoc, increment, reset} = useCounter;

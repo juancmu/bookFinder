@@ -9,8 +9,9 @@ import "./BookList.css";
 const BookList = () => {
   const {books, loading, resultTitle} = useGlobalContext();
   const booksCover = books.map((book) => {
-    console.log(book);
-    console.log(book.cover_id);
+    
+    // console.log(book.cover_id);
+
     return {
       ...book,
       id: (book.id).replace("/works/", ""),

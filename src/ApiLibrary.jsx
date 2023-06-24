@@ -16,18 +16,19 @@ const ApiLibrary = ({children}) => {
             const response = await fetch(`http://openlibrary.org/search.json?title=${searchParam}`);
             const data = await response.json();
             const {docs} = data;
-            console.log(data);
+            // console.log('salida='+data);
             
             if(docs){
                 const newBooks = docs.slice(0, numBooks).map((bookSingle) => {
-                    const {key, author_name, cover_i, first_publish_year, title} = bookSingle;
-
+                    const {key, author_name, cover_i, first_publish_year, title, isbn} = bookSingle;
+                    // console.log(bookSingle.isbn)
                     return {
                         id: key,
                         author: author_name,
                         cover_id: cover_i,
                         first_publish_year: first_publish_year,
-                        title: title
+                        title: title,
+                        isbn: isbn
                     }
                 });
 

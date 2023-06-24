@@ -27,7 +27,9 @@ const Book = (book) => {
 
         <div className='book-item-info-item publish-year fs-15'>
           <span className='text-capitalize fw-7'>Año de Publicacion: </span>
-          <span>{book.first_publish_year}</span>
+          <span>{book.first_publish_year}</span><br />
+          <span className='text-capitalize fw-7'>ISBN: </span>
+          <span>{book.isbn[0]}</span>
         </div>
       </div>
     </div>
