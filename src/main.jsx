@@ -11,7 +11,7 @@ import About from "./views/About";
 import BookList from "./components/BookList";
 import BookID from "./components/BookID";
 import { ApiLibrary } from './ApiLibrary';
-import NoFound from './components/Nofound';
+import NoFound from './views/Nofound';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
